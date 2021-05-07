@@ -12,60 +12,87 @@
     <div class="header">
 
             <div class="logo">
-                <img src="../Assets/logo.png">
+                <a href="../HTML/Home.html"><img src="../Assets/logo.png"></a>
             </div>
 
-            <div class="text">
-              <a href="Home.html">HOME</a>
-              <a href="">SCREENSHOTS</a>
-              <a href="">EVENT</a>
-              <a href="">CHARACTERS</a>
+            <div class="navbar">
+                <div class="navbar-item">
+                    <a href="Home.html" id="selected-menu">HOME</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="">SCREENSHOTS</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="">EVENT</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="">CHARACTERS</a>
+                </div>
             </div>  
 
-            <div class="buttonPlay">
+            <div class="button-play">
                 <a href="">PLAY NOW</a>
             </div>
 
     </div>
 
     <div class="banner">
-        <img src="../Assets/Event-Banner.png">
+        <div class="banner-container">
+            <img src="../Assets/Event-Banner.png">
+        </div>
+
+        <a class="prev-button" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next-button" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dot-container">
+            <span class="slideshow-dot" onclick="currentSlide(1)"></span>
+            <span class="slideshow-dot" onclick="currentSlide(2)"></span>
+        </div>
     </div>
 
-    <div class="body">
+    <div class="content">
 
-        <div class="upperBody"> 
+        <div class="upper-body"> 
 
-            <div class="imageBody">
+            <div class="image-body">
                 <img src="../Assets/info-1.jpg">
             </div>
 
-            <div class="textBody">
-                <div class="textTitle"> 
-                    <h2>PLAY HOW YOU WANT</h2>
-                    <h2>ONLINE – OFFLINE</h2>
-                    <h2>CASUAL – COMPETITIVE</h2>
+            <div class="text-body">
+                <div class="text-title"> 
+                    <h2>PLAY HOW YOU WANT<br>ONLINE – OFFLINE<br>CASUAL – COMPETITIVE</h2>
                 </div>    
-                <p>Play locally with friends, fight in chaotic Free-For-All matches online and offline, team up for 2v2 battles, or climb the Ranked ladder to Platinum and beyond. There’s a little something for everyone.
-                    If you’re looking to unwind with friends, or if you’re aiming to carve your name into the pillars of the Frawlsalla Power Rankings, you can play Frawlsalla however and whenever you want.
-                </p>
+
+                <div class="text-content">
+                    <p>
+                        Play locally with friends, fight in chaotic Free-For-All matches online and offline, team up for 2v2 battles, or climb the Ranked ladder to Platinum and beyond. There’s a little something for everyone.
+                    </p>
+                    <p>
+                        If you’re looking to unwind with friends, or if you’re aiming to carve your name into the pillars of the Frawlsalla Power Rankings, you can play Frawlsalla however and whenever you want.
+                    </p>
+                </div>
             </div>
 
         </div>
 
-        <div class="lowerBody">  
+        <div class="lower-body">  
 
-            <div class="textBody">
-                <div class="textTitle"> 
-                    <h2>CHOOSE A LEGEND</h2>
-                    <h2>BECOME A LEGEND</h2>
+            <div class="text-body">
+                <div class="text-title"> 
+                    <h2>CHOOSE A LEGEND<br>BECOME A LEGEND</h2>
                 </div>  
-                <p>Over 40 Legends to chose from, each with unique movesets, signature abilities, stats, weapon combinations and flair to suit your personal playstyle. Master one, or learn them all.
-                    More legends continue to join the fight in an ever-expanding roster of those who fight for glory, honor, and bragging rights in the Brawlhalla arenas.
-                </p>
+
+                <div class="text-content">
+                    <p>
+                        Over 40 Legends to chose from, each with unique movesets, signature abilities, stats, weapon combinations and flair to suit your personal playstyle. Master one, or learn them all.
+                    </p>
+                    <p>
+                        More legends continue to join the fight in an ever-expanding roster of those who fight for glory, honor, and bragging rights in the Brawlhalla arenas.
+                    </p>
+                </div>
             </div>
 
-            <div class="imageBody">
+            <div class="image-body">
                 <img src="../Assets/info-2.png">
             </div>
 
@@ -80,9 +107,9 @@
         </div>
 
         <div class="icons">
-            <a href=""><img src="../Assets/instagram-icon.png"></a>
-            <a href=""><img src="../Assets/facebook-icon.png"></a>
-            <a href=""><img src="../Assets/twitter-icon.png"></a>
+            <a href=""><img id="img-instagram" src="../Assets/instagram-icon.png"></a>
+            <a href=""><img id="img-facebook" src="../Assets/facebook-icon.png"></a>
+            <a href=""><img id="img-twitter" src="../Assets/twitter-icon.png"></a>
         </div>
         
     </div>
