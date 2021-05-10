@@ -1,0 +1,123 @@
+body{
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.regform{
+    width: 800px;
+    background-color: (211, 211, 211);
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.main{
+    background-color: #0e3e5b;
+    width: 800px;
+    margin: auto;
+}
+
+form{
+    padding: 10px;
+}
+
+#name{
+    width: 100%;
+    height: 100px;
+}
+
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.firstname{
+    position: relative;
+    left: 200px;
+    top: -29px;
+    border-radius: 6px;
+    line-height: 30px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.lastname{
+    position: relative;
+    left: 200px;
+    top: -29px;
+    border-radius: 6px;
+    line-height: 30px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.Age{
+    margin-left: 25px;
+    margin-top: -35px;
+    width: 125px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.age{
+    position: relative;
+    left: 200px;
+    top: -29px;
+    border-radius: 6px;
+    line-height: 30px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.Gender{
+    margin-top: -7px;
+    margin-left: 25px;
+    width: 125px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.gender{
+    position: relative;
+    left: 200px;
+    top: -23px;
+    border-radius: 6px;
+    height: 30px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.Email{
+    margin-left: 25px;
+    margin-top: 8px;
+    width: 125px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.email{
+    position: relative;
+    left: 20px;
+    top: -30px;
+    border-radius: 6px;
+    line-height: 30px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+
