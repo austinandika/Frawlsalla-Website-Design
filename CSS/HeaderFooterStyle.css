@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Erasdemi';
+    src: url(../Assets/Font/erasdemi.TTF);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Erasdemi';
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #0e3e5b;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .logo img {
+    height: 100px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    width: 1000px;
+}
+
+.header .navbar .navbar-item {
+    height: 80px;
+}
+
+.header .navbar .navbar-item a {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    margin: 0 35px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.header .navbar .navbar-item #selected-menu {
+    border-bottom: 3px solid red;
+}
+
+.header .navbar a:hover {
+    border-bottom: 3px solid red;
+    transition: 0.3s;
+}
+
+.header .button-play a {
+    height: 50px;
+    width: 170px;
+    font-size: larger;
+    color: white;
+    background-color: #960200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.header .button-play a:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+
+.footer {
+    flex-shrink: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #0e3e5b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer .copyright {
+    width: 70%;
+}
+
+.footer .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.footer .icons img {
+    width: 24px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.footer .icons img:hover {
+    opacity: 1;
+}
+
+.footer .icons #img-instagram {
+    width: 36px;
+}

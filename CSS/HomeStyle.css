@@ -1,87 +1,8 @@
-@font-face {
-    font-family: 'Erasdemi';
-    src: url(../Assets/Font/erasdemi.TTF);
-}
-
-body{
-    margin: 0;
-    font-family: 'Erasdemi';
-    font-size: 14px;
-}
-
-.header{
-    background-color: #0e3e5b;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.header a{
-    text-decoration: none;
-    color: white;
-}
-
-.header .logo img{
-    height: 100px;
-}
-
-
-.header .navbar{
-    display: flex;
-    align-items: center;
-    font-size: larger;
-    width: 1000px;
-}
-
-.header .navbar .navbar-item{
-    height: 80px;
-}
-
-.header .navbar .navbar-item a{
-    display: flex;
-    align-items: center;
-    height: 76px;
-    margin: 0 35px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s;
-}
-
-.header .navbar .navbar-item #selected-menu{
-    border-bottom: 3px solid red;
-}
-
-
-.header .navbar a:hover{
-    border-bottom: 3px solid red;
-    transition: 0.3s;
-}
-
-.header .button-play a{
-    height: 50px;
-    width: 170px;
-    font-size: larger;
-    color: white;
-    background-color: #960200;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
-.header .button-play a:hover{
-    opacity: 1;
-}
-
-.banner{
+.banner {
     position: relative;
 }
 
-.banner .banner-container img{
+.banner .banner-container img {
     width: 100%;
     min-height: 300px;
 }
@@ -102,14 +23,16 @@ body{
 }
 
 /* Position the "next button" to the right */
+
 .banner .next-button {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
+
 .banner .prev-button:hover, .next-button:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner .dot-container {
@@ -137,37 +60,28 @@ body{
     background-color: white;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.image-body{
+.image-body {
     padding: 0 20px;
 }
 
-.image-body img{
+.image-body img {
     height: 300px;
 }
 
-.content .upper-body{
+.content .upper-body {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.content .lower-body{
+.content .lower-body {
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.content .text-body{
+.content .text-body {
     width: 700px;
     height: fit-content;
     display: flex;
@@ -176,50 +90,12 @@ body{
     font-size: larger;
 }
 
-.content .text-title{
+.content .text-title {
     color: #ff7200;
     text-decoration: solid;
     text-align: center;
 }
 
-.content .text-content{
+.content .text-content {
     text-align: justify;
 }
-
-.footer{
-    height: 100px;
-    width: 100%;
-    background-color: #0e3e5b;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-}
-
-.footer .copyright{
-    width: 70%;
-}
-
-.footer .icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 200px;
-}
-
-
-.footer .icons img{
-    width: 24px;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.footer .icons img:hover{
-    opacity: 1;
-}
-
-.footer .icons #img-instagram{
-    width: 36px;
-}
-
-
