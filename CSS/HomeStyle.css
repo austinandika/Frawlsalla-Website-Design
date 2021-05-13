@@ -63,10 +63,11 @@
 
 .image-body {
     padding: 0 20px;
+    max-width: 500px;
 }
 
 .image-body img {
-    height: 300px;
+    width: 100%;
 }
 
 .content .upper-body {
@@ -105,13 +106,13 @@
 
 @media screen and (max-width: 800px) {
     .content .upper-body{
-        display: block;
+        flex-direction: column;
         text-align: center;
     }
 
     .content .lower-body {
         margin-top: 100px;
-        display: block;
+        flex-direction: column;
         text-align: center;
     }
 
