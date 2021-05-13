@@ -5,6 +5,7 @@
 .banner .banner-container img {
     width: 100%;
     min-height: 300px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .banner .prev-button, .next-button {
@@ -46,8 +47,8 @@
 
 .banner .dot-container .slideshow-dot {
     cursor: pointer;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     margin: 0 3px;
     border: 2px solid white;
     background-color: transparent;
