@@ -3,10 +3,13 @@
     src: url(../Assets/Font/erasdemi.TTF);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
-  }
-  
+}
 
 body {
     margin: 0;
@@ -44,7 +47,10 @@ body {
     height: 100px;
 }
 
+/* Navbar */
+
 .header .navbar {
+    overflow: hidden;
     display: flex;
     align-items: center;
     font-size: larger;
@@ -53,26 +59,31 @@ body {
 
 .header .navbar .navbar-item {
     height: 80px;
+    margin: 0 35px;
 }
 
-.header .navbar .navbar-item a {
+.header .navbar .navbar-item>a {
     display: flex;
     align-items: center;
-    height: 76px;
-    margin: 0 35px;
+    height: 80px;
     padding-left: 12px;
     padding-right: 12px;
     border-bottom: 3px solid transparent;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .header .navbar .navbar-item #selected-menu {
     border-bottom: 3px solid red;
 }
 
-.header .navbar a:hover {
+.header .navbar .navbar-item:hover {
     border-bottom: 3px solid red;
-    transition: 0.3s;
+    transition: 0.2s;
+}
+
+.header .navbar .navbar-item:hover a>i {
+    color: white;
+    transition: 0.2s;
 }
 
 .header .button-play a {
@@ -85,9 +96,49 @@ body {
     align-items: center;
     justify-content: center;
     opacity: 0.8;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
+/* Dropdown Navbar */
+
+.header .navbar .navbar-item>a>i {
+    margin-left: 10px;
+    color: gray;
+    transition: 0.2s;
+}
+
+.header .navbar .navbar-item .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0e3e5b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.header .navbar .navbar-item .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0 0px;
+    padding-left: 30px;
+    padding-right: 70px;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.header .navbar .navbar-item .dropdown-content a:hover {
+    background-color: gray;
+}
+
+.header .navbar .navbar-item:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Play Now Button */
 .header .button-play a:hover {
     opacity: 1;
 }
@@ -96,7 +147,6 @@ body {
 
 .footer {
     flex-shrink: 0;
-
     height: 100px;
     width: 100%;
     background-color: #0e3e5b;
@@ -120,7 +170,7 @@ body {
 .footer .icons img {
     width: 24px;
     opacity: 0.6;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .footer .icons img:hover {
