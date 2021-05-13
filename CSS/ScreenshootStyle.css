@@ -48,10 +48,11 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .content .lower-content .screenshoot-conntainer img {
-    width: 500px;
+    width: 85%;
     transition: transform .2s;
 }
 
@@ -59,4 +60,25 @@
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2); 
+}
+
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 800px) {
+    .content .lower-content .screenshoot-conntainer {
+        margin-top: 0;
+        display: block;
+        text-align: center;
+    }
+    
+    .content .lower-content .screenshoot-conntainer img {
+        margin-top: 50px;
+        width: 70%;
+        transition: transform .2s;
+    }
+
+    .content::before {
+        background-image: none;
+    }
 }

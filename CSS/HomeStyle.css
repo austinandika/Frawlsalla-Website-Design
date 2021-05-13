@@ -100,3 +100,32 @@
 .content .text-content {
     text-align: justify;
 }
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 800px) {
+    .content .upper-body{
+        display: block;
+        text-align: center;
+    }
+
+    .content .lower-body {
+        margin-top: 100px;
+        display: block;
+        text-align: center;
+    }
+
+    .content .text-body {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: larger;
+    }
+
+    .image-body img {
+        width: 80%;
+        height: auto;
+    }
+}

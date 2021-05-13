@@ -46,10 +46,9 @@
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.event-card :hover{
+.event-card:hover .upper-card, .event-card:hover .lower-card{
     transition: 300ms;
     opacity: 0.9;
-    
 }
 
 .event-card img{
