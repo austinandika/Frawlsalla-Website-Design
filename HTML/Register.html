@@ -28,7 +28,7 @@
     
         <div class="navbar" id="navbar-menu">
             <div class="navbar-item">
-                <a href="Home.html" id="selected-menu">HOME</a>
+                <a href="Home.html">HOME</a>
             </div>
     
             <div class="navbar-item">
@@ -53,42 +53,94 @@
     </div>
 
     <div class="content">
-            <div class="regform"><h1>Registration Form</h1></div>
-            <div class="main">
-                <form>
-                    <div id="name">
-                        <h2 class="name">Name</h2>
-                        <input type="text" class="firstname" name="" placeholder="Firstname">
-                        <input type="text" class="lastname" name="" placeholder="Lastname">
+        <div class="regform-container">
+            <div class="left-container">
+                <img src="../Assets/Characters/Cassidy.png" alt="">
+            </div>
+
+            <div class="right-container">
+                <div class="regform-title">
+                    <h1>REGISTRATION FORM</h1>
+                </div>
+                
+                <form action="">
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-first-name">Name</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="text" id="txt-first-name" name="" placeholder="">
+                        </div>
                     </div>
-                    <div id="age">
-                        <h2 class="Age">Age</h2>
-                        <input type="number" class="age" name="" placeholder="Age">
+            
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-gender">Gender</label>
+                        </div>
+                        <div class="column-form" id="gender-form">
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-male" name="gender" value="male" >
+                                <label for="male">Male</label>
+                            </div>
+                            
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div id="gender">
-                        <h2 class="Gender">Gender</h2>
-                        <select class="Gender-option">
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Others</option>
-                        </select>
+            
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-email">Email Address</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="text" id="txt-email" name="" placeholder="">
+                        </div>
                     </div>
-                    <div id="email">    
-                        <h2 class="Email">Email</h2>
-                        <input type="text" class="Email-container" name="" placeholder="Email">
+            
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-password">Password</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="password" id="txt-password" name="" placeholder="">
+                        </div>
                     </div>
-                    <div id="password">
-                        <h2 class="password">Password</h2>
-                        <input type="password" class="pass1" name="" placeholder="Enter password">
-                        <input type="password" class="pass2" name="" placeholder="Re-enter password"><br>
+            
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-confirm-password">Confirm Your Password</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="password" id="txt-confirm-password" name="" placeholder="">
+                        </div>
                     </div>
-                    <div id="condition">
-                        <p class="condition"> <input type="checkbox" id="terms" name=""> I accept the terms and conditions</p><br><br>
+            
+                    <div class="term-condition-container">
+                        <div class="checkbox-term-condition">
+                            <input type="checkbox" id="cb-term-condition" name="termCondition" value="agreeTermCondition">
+                        </div>
+                        <div class="label-term-condition">
+                            I accept the terms and conditions of Frawlsalla Company
+                        </div>
                     </div>
-                    <center><input type="button" class="btn" value="Register" name=""></center> 
+                    
+                    <div class="submit-button-container">
+                        <input type="submit" name="btnSubmit" class="btn-submit" value="REGISTER">
+                    </div>
+                    
                 </form>
             </div>
+            
         </div>
+    </div>
 
     <div class="footer">
 
