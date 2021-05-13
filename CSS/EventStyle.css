@@ -1,9 +1,10 @@
+
+
 .events-header{
     position: relative;
     height: 70px; 
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
 }
 
 .header-content{
@@ -24,36 +25,42 @@
 .upper-content{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .lower-content{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .event-card{
     display: flex;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 50px;
     flex-direction: column;
     height: 40%;
     width: 30%;
+    background-color: #0e3e5b;
     
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 1;
 }
 
-.event-card:hover .upper-card, .event-card:hover .lower-card, .event-card:hover .description-card{
+.event-card:hover{
     transition: 300ms;
     transform: scale(1.2);
 }
 
-.event-card img{
-    width: 100%;
+.event-card:hover .description-card{
+    display: block;
 }
 
-.upper-card{
+.event-card .upper-card{
+    width: 100%;
+    height: 100%;
+}
+
+.event-card .upper-card img{
     width: 100%;
     height: 100%;
 }
@@ -62,15 +69,18 @@
     display: flex;
     justify-content: center;
     font-size:small;
-    background: #0e3e5b;
+    text-align: center;
     color: white;
+    margin: 0 10px;
 }
 
 .description-card{
-    height: 125px;
+    display: none;
+    height: fit-content;
     padding-left: 10px;
     padding-right: 10px;
     font-size:smaller;
+    text-align: justify;
     background: #0e3e5b;
     color: white;
 }
@@ -96,7 +106,6 @@ p{
 
     .event-card{
         display: flex;
-        margin-top: 40px;
         flex-direction: column;
         height: 40%;
         width: 90%;
@@ -115,8 +124,6 @@ p{
     }
 
     .description-card{
-        height: 150px;
-        font-size:smaller;
-        color: white;
+        height: fit-content;
     }
 }

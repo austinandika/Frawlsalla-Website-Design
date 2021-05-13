@@ -14,6 +14,10 @@
     margin-top: 70px;
 }
 
+.image-container .image-row-container .image-column-container {
+    margin: 0 5px;
+}
+
 .image-container .image-row-container .image-column-container .agent-image {
     width: 250px;
     height: 415px;
