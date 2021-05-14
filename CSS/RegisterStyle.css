@@ -1,7 +1,16 @@
-.content::before {
+html{
+   min-height: 100%;
+   background-image: url("../Assets/screenshot Game/Game-wallpaper.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+}
+
+/* .content::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 80px;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -10,7 +19,7 @@
     width: 100%;
     opacity: 1;
     z-index: -1;
-}
+} */
 
 .content{
 }
@@ -117,6 +126,7 @@
 
 .content .regform-container .right-container form .row .column-form input[type=text].error, input[type=password].error{
     border: 2px solid red;
+    background-color: lightpink;
 }
 
 

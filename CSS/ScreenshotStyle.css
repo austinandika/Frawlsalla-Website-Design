@@ -1,4 +1,13 @@
-.content::before {
+html{
+    min-height: 100%;
+    background-image: url("../Assets/screenshot Game/Background-Image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+ }
+
+/* .content::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -11,7 +20,7 @@
     height: 125vw;
     opacity: 0.3;
     z-index: -1;
-}
+} */
 
 .content {
     background-color: #F4F4F4;
