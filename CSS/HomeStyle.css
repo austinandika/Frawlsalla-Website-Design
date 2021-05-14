@@ -20,6 +20,7 @@
 }
 
 .banner #leftControl, .banner #rightControl {
+    opacity: 0;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -33,6 +34,13 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     z-index: 1000;
+    transition: 0.3s;
+}
+
+.banner:hover #leftControl, .banner:hover #rightControl{
+    opacity: 1;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Position the "next button" to the right */
@@ -44,7 +52,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 
-.banner #leftControl:hover, #rightControl:hover {
+.banner #leftControl:hover, .banner #rightControl:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -62,8 +70,8 @@
     height: 15px;
     width: 15px;
     margin: 0 3px;
-    border: 2px solid white;
-    background-color: transparent;
+    border: 2px solid darkgray;
+    background-color: darkgray;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
