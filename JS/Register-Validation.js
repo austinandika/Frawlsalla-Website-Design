@@ -135,3 +135,9 @@ function validateTermCondition(){
         flag = false
     }
 }
+
+// Function to reset field when click
+// function clearFieldEffect(fieldId){
+//     var id = document.getElementById(fieldId)
+//     id.classList.remove("error")
+// }
