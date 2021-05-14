@@ -103,7 +103,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.8;
     transition: 0.2s;
 }
 
@@ -150,7 +149,7 @@ body {
 }
 
 .header .button-play a:hover {
-    opacity: 1;
+    filter: brightness(120%);
 }
 
 /* FOOTER */

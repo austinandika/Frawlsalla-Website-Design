@@ -44,10 +44,11 @@
     
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 1;
+    transition: 0.3s ease;
 }
 
 .event-card:hover{
-    transition: 300ms;
+    transition: 0.3s;
     transform: scale(1.2);
 }
 

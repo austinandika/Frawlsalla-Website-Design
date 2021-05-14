@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../CSS/HeaderFooterStyle.css">
     <link rel="stylesheet" href="../CSS/HomeStyle.css">
     <script src="../JS/MobileInterfaceScript.js"></script>
+    <script src="../JS/jquery-3.5.1.min.js"></script>
+    <script src="../JS/Image-Slider.js"></script>
 </head>
 
 <body>
@@ -54,15 +56,30 @@
 
     <div class="banner">
         <div class="banner-container">
-            <img src="../Assets/Homepage Info/Event-Banner.png">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/HeatwaveEvent.jpg"></a>
         </div>
 
-        <a class="prev-button" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next-button" onclick="plusSlides(1)">&#10095;</a>
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/Bloomhalla.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/BackToSchool.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/JotunArena.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/LuckOBrawl.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/Patch 3.42.jpg"></a>
+        </div>
 
         <div class="dot-container">
-            <span class="slideshow-dot" onclick="currentSlide(1)"></span>
-            <span class="slideshow-dot" onclick="currentSlide(2)"></span>
         </div>
     </div>
 
