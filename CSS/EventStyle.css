@@ -1,20 +1,14 @@
 
 
-.events-header{
-    position: relative;
-    height: 70px; 
-    display: flex;
-    justify-content: center;
+.content-title{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.header-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 50%;
-    font-size: 30px;
+.content-title h1{
+    text-align: center;
     color: #ff7200;
+    font-size: 30px;
 }
 
 .content-items{
@@ -36,7 +30,7 @@
 
 .event-card{
     display: flex;
-    margin-top: 50px;
+    margin-bottom: 50px;
     flex-direction: column;
     height: 40%;
     width: 30%;
@@ -92,10 +86,6 @@ p{
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 800px) {
-
-    .header-content{
-        font-size: x-large;
-    }
 
     .content-items{
         display: flex;

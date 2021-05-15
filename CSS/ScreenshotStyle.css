@@ -50,6 +50,10 @@ html{
 }
 
 .content .upper-content .upper-content-video video {
+    border-radius: 10px;
+}
+
+.content .upper-content .upper-content-video video {
     width: 100%;
 }
 
@@ -76,6 +80,25 @@ html{
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 800px) {
+
+    .content .upper-content {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .content .upper-content .upper-content-title {
+        width: 100%;
+        margin: 0;
+        padding: 0 35px;
+        height: 100%;
+        text-align: justify;
+    }
+    
+    .content .upper-content .upper-content-video {
+        padding: 0 35px;
+        width: 100%;
+    }
+
     .content .lower-content .screenshot-conntainer {
         margin-top: 0;
         flex-direction: column;
@@ -83,7 +106,7 @@ html{
     }
     
     .content .lower-content .screenshot-conntainer img {
-        margin-top: 50px;
+        margin-top: 30px;
         width: 70%;
         transition: transform .2s;
     }

@@ -1,3 +1,16 @@
+html{
+    min-height: 100%;
+    background-image: url("../Assets/screenshot Game/Game-wallpaper2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+ }
+
+.content {
+    background-color: #F4F4F4;
+}
+
 .content .content-title h1 {
     text-align: center;
     color: #ff7200;
@@ -6,6 +19,7 @@
 
 .content .content-title {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .image-container .image-row-container {
@@ -44,8 +58,6 @@
     background-image: linear-gradient(to right, red 0%, #960200 100%);
 }
 
-.image-container .image-row-container .image-column-container .agent-image .image-main {}
-
 .image-container .image-row-container .image-column-container .agent-image .image-overlay {
     position: absolute;
     top: 0;
@@ -69,7 +81,7 @@
 
 /* MEDIA SCREEN */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1130px) {
     .image-container .image-row-container {
         flex-direction: column;
         margin-top: 0px;
@@ -79,6 +91,22 @@
         margin-right: auto;
         margin-bottom: 50px;
         width: 250px;
+    }
+    .image-container .image-row-container .image-column-container .agent-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .image-container .image-row-container {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .image-container .image-row-container .image-column-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
     }
     .image-container .image-row-container .image-column-container .agent-image {
         margin-left: auto;
