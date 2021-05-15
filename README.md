@@ -3,7 +3,7 @@ This project is created by:
 2	2301866763	Marcelino Budiman
 3	2301861314	Giovanni Lukardi
 
-For Human and Computer Interaction course's project
+For Human and Computer Interaction course's final project
 Bina Nusantara University 2021
 
 ==================================================
