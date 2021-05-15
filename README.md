@@ -1,7 +1,7 @@
 This project is created by:
-1	2301860261	Austin Andika Tanujaya
-2	2301866763	Marcelino Budiman
-3	2301861314	Giovanni Lukardi
+1.	2301860261	Austin Andika Tanujaya
+2.	2301866763	Marcelino Budiman
+3.	2301861314	Giovanni Lukardi
 
 For Human and Computer Interaction course's final project
 Bina Nusantara University 2021
