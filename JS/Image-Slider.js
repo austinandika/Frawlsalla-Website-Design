@@ -58,9 +58,11 @@ $(document).ready(function () {
     // Create event listeners for bullet/dot click
     $('span.slideshow-dot').click(function(){
         var dotId = $(this).attr('id');
-        currentPosition = dotId.replace('slide-dot','');
+        var currentPositionString = dotId.replace('slide-dot','');
+        
+        currentPosition = parseInt(currentPositionString);
 
-        RemoveInterval()
+        RemoveInterval();
 
         manageControls(currentPosition);
         $('#slideInner').animate({
