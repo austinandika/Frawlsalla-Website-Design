@@ -4,6 +4,7 @@ var txtEmail = document.getElementById('txt-email');
 var txtPassword = document.getElementById('txt-password');
 var txtConfirmPass = document.getElementById('txt-confirm-password');
 var cbTermCondition = document.getElementById('cb-term-condition');
+var cbTermConditionContainer = document.getElementById('cb-term-condition-container');
 var txtForm = document.getElementById('form');
 
 var lblErrorName = document.getElementById('lbl-error-name');
@@ -47,7 +48,7 @@ function resetEffectError() {
     txtName.classList.remove("error");
     txtPassword.classList.remove("error");
     txtConfirmPass.classList.remove("error");
-    cbTermCondition.classList.remove("error");
+    cbTermConditionContainer.classList.remove("error");
 }
 
 function validateName(){
@@ -152,7 +153,7 @@ function validateConfirmPass(){
 
 function validateTermCondition(){
     if (cbTermCondition.checked == false) {
-        cbTermCondition.classList.add("error");
+        cbTermConditionContainer.classList.add("error");
         flag = false;
     }
 }
@@ -162,3 +163,9 @@ function validateTermCondition(){
 //     var id = document.getElementById(fieldId)
 //     id.classList.remove("error")
 // }
+
+
+// QUERY PARAMETER AFTER SUBMIT FORM
+// 1. kalo query parameter "name" adalah null (ga ada), maka id=success-registered-container ditambah class " hide"
+// 2. kalo query parameter "name" nya ada, maka id=regform-input-container ditambah class " hide" 
+//      - cari query parameter "nama", terus masukin nilai nama itu ke dalem id="registered-name" (ini adalah h1)

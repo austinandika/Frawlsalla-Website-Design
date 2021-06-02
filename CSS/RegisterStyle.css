@@ -21,6 +21,24 @@ html{
     z-index: -1;
 } */
 
+.content .success-registered h1 {
+    text-align: center;
+    color: #0e3e5b;
+    font-size: 30px;
+}
+
+.content .success-registered {
+    text-align: center;
+    font-size: 17px;
+}
+
+.content #success-registered-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+}
+
 .content .regform-title h1 {
     text-align: center;
     color: #0e3e5b;
@@ -47,6 +65,10 @@ html{
     background-color: #fff;
     width: 460px;
 }
+
+.content .regform-container .right-container.hide{
+    display: none;
+ }
 
 .content .regform-container .right-container form{
     margin: 30px 30px;
@@ -87,7 +109,7 @@ html{
     justify-content: center;
 }
 
-.content .regform-container .right-container form .submit-button-container .btn-submit{
+.content .regform-container .right-container .btn-submit{
     cursor: pointer;
     background-color: #0e3e5b;
     border: none;
@@ -102,7 +124,7 @@ html{
     transition: 0.2s;
 }
 
-.content .regform-container .right-container form .submit-button-container .btn-submit:hover{
+.content .regform-container .right-container .btn-submit:hover{
     background: #0b3149;
 	letter-spacing: 1px;
 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
