@@ -39,6 +39,15 @@ html{
     padding: 30px 30px;
 }
 
+.content #success-registered-container.hide{
+    display: none;
+}
+
+.content .regform-title {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .content .regform-title h1 {
     text-align: center;
     color: #0e3e5b;

@@ -6,6 +6,8 @@ var txtConfirmPass = document.getElementById('txt-confirm-password');
 var cbTermCondition = document.getElementById('cb-term-condition');
 var cbTermConditionContainer = document.getElementById('cb-term-condition-container');
 var txtForm = document.getElementById('form');
+var successContainer = document.getElementById('success-registered-container');
+var formContainer = document.getElementById('regform-input-container')
 
 var lblErrorName = document.getElementById('lbl-error-name');
 var lblErrorGender = document.getElementById('lbl-error-gender');
@@ -15,7 +17,7 @@ var lblErrorConfirmPass = document.getElementById('lbl-error-confirm-password');
 
 var flag = true;
 form.addEventListener('submit', (e) => {
-
+    successContainer.classList.add("hide")
     // Reset flag, label, and effect
     flag = true;
     resetLblError();
@@ -164,6 +166,16 @@ function validateTermCondition(){
 //     id.classList.remove("error")
 // }
 
+var url_string = window.location.href; 
+var url = new URL(url_string);
+var nameRegistered = url.searchParams.get("name");
+var nameRegisteredH1 = document.getElementById('registered-name')
+
+if(nameRegistered != null){
+    formContainer.classList.add("hide")
+    successContainer.classList.remove("hide")
+    nameRegisteredH1.innerHTML = "Hello, " + nameRegistered
+}
 
 // QUERY PARAMETER AFTER SUBMIT FORM
 // 1. kalo query parameter "name" adalah null (ga ada), maka id=success-registered-container ditambah class " hide"
